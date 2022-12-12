@@ -14,6 +14,7 @@ function Technology() {
     return (
         <div className='App-tech'>
             <Navbar />
+            <h2 className='hearder'>03 SPACE LUNCH 101</h2>
             <div className='tech-container'>
                 <div className='tech-Btn'>
                     {

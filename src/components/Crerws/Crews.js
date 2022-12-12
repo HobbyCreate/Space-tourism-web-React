@@ -23,9 +23,9 @@ function Crews() {
     return (
         <div className='App-crew'>
             <Navbar />
+            <h2 className='hearder'>02 MEET YOUR CREW</h2>
             <div className='crew-container'>
                 <div className='crew-bio'>
-                    <h2>02 MEET YOUR CREW</h2>
                     <div className='role'>
                         <h4>{crews[index].role}</h4>
                     </div>

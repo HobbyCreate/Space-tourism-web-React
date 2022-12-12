@@ -15,9 +15,9 @@ function Destination() {
     return (
         <div className='App-dest'>
             <Navbar />
+            <h2 className='hearder'>01 PICK YOUR DESTINATION</h2>
             <div className='destination-container'>
                 <div className='destination-image'>
-                    <h2>01 PICK YOUR DESTINATION</h2>
                     <span><img src={require(`../../assets/images/destination/${destinations[index].images.png}`)} alt='a' /></span>
                 </div>
                 <div className='destination-detail'>

@@ -1,5 +1,4 @@
 .tech-container {
-    height: 100vh;
     display: grid;
     grid-template-columns: 2fr 3fr 3fr;
     height: calc(100vh - 110px);
@@ -12,7 +11,7 @@
     align-items: center;
 }
 
-button {
+.tech-Btn>button {
     margin: 20px auto;
     font-size: 1.5rem;
     padding: 20px;
@@ -22,8 +21,8 @@ button {
     cursor: pointer;
 }
 
-button:hover,
-button:focus {
+.tech-Btn>button:hover,
+.tech-Btn>button:focus {
     border-color: #FFFFFF;
     color: #FFFFFF;
     background-color: #070929;
@@ -38,24 +37,23 @@ button:focus {
     margin: auto 50px;
 }
 
-.tech-detail .tech-name{
+.tech-detail .tech-name {
     font-size: 3rem;
     margin: 50px 0;
 }
 
-.tech-detail>p{
+.tech-detail>p {
     font-size: 1.3rem;
 }
 
-.tech-image{
+.tech-image {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* transform: scale(0.8); */
 }
 
-img{
+.tech-image img {
     border-radius: 10px;
     overflow: hidden;
 }
@@ -70,11 +68,93 @@ img{
         background-image: url('../../assets/images/technology/background-technology-tablet.jpg');
         background-size: cover;
     }
+
+    .tech-container {
+        display: flex;
+        flex-direction: column;
+        /* height: 100%; */
+        width: 100vw;
+    }
+
+    .tech-Btn {
+        flex-direction: row;
+        padding: 10px;
+        order: 1;
+    }
+
+    .tech-Btn>button {
+        font-size: 1.2rem;
+        margin-top: 0;
+        width: 80px;
+        height: 80px;
+    }
+
+    .tech-detail {
+        order: 2;
+        margin-bottom: 20px;
+    }
+
+    .tech-detail>p {
+        font-size: 1rem;
+    }
+
+    .tech-detail .tech-name {
+        margin: 20px 0;
+    }
+
+    .tech-image {
+        transform: scale(0.8);
+    }
+
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 505px) {
     .App-tech {
         background-image: url('../../assets/images/technology/background-technology-mobile.jpg');
         background-size: cover;
+    }
+
+    .tech-container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100vw;
+    }
+
+    .tech-Btn {
+        flex-direction: row;
+        padding: 10px;
+        order: 1;
+        position: relative;
+        top: -120px;
+    }
+
+    .tech-Btn>button {
+        font-size: 1.2rem;
+        margin-top: 0;
+        width: 80px;
+        height: 80px;
+    }
+
+    .tech-detail {
+        order: 2;
+        margin-bottom: 20px;
+        position: relative;
+        top: -120px;
+    }
+
+    .tech-detail>p {
+        font-size: 1rem;
+    }
+
+    .tech-detail .tech-name {
+        margin: 20px 0;
+        font-size: 2rem;
+    }
+
+    .tech-image {
+        transform: scale(0.6);
+        position: relative;
+        top: -50px;
     }
 }
