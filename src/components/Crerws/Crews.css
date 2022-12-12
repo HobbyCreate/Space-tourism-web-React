@@ -1,0 +1,181 @@
+
+.crew-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    color: #fff;
+    width: 100%;
+    height: calc(100vh - 110px);
+    overflow-y: hidden;
+}
+
+.crew-bio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 150px;
+}
+
+.crew-bio>h2 {
+    margin-left: -75px;
+    margin-bottom: 150px !important;
+}
+
+.crew-bio .role {
+    margin: 15px;
+    font-size: 1.8rem;
+    text-align: left;
+    transition: all 1s ease-in;
+}
+
+.crew-bio .name {
+    margin: 15px;
+    font-size: 2rem;
+    text-align: left;
+}
+
+.crew-bio .bio {
+    height: 100px;
+    margin: 15px;
+    font-size: 1.3rem;
+    text-align: stretch;
+    align-items: center;
+}
+
+.crew-image {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.crew-bio .dot {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    font-size: 4rem;
+    bottom: -10%;
+}
+
+.dot:hover {
+    cursor: pointer;
+}
+
+.shink {
+    color: rgb(255, 255, 255);
+}
+
+
+@media screen and (max-width: 1024px) and (min-width: 481px) {
+
+    .crew-container {
+        display: flex;
+        flex-direction: column;
+        max-height: calc(100vh - 110px);
+        width: 100vw;
+        overflow: hidden;
+    }
+
+    .crew-bio {
+        align-items: center;
+        margin-left: 0;
+    }
+
+    .crew-bio>h2 {
+        margin-left: 0;
+        margin-top: 50px !important;
+        margin-bottom: 50px !important;
+    }
+
+    .crew-bio .role {
+        font-size: 1.4rem;
+        margin: 10px;
+    }
+
+    .crew-bio .name {
+        font-size: 1.5rem;
+        margin: 10px;
+    }
+
+    .crew-bio .bio {
+        font-size: 1rem;
+        height: 130px;
+        display: flex;
+        margin: 10px 50px;
+    }
+
+    .crew-bio .dot {
+        display: flex;
+        font-size: 3rem;
+    }
+
+    .crew-image {
+        transform: scale(.7);
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .crew-container {
+        display: flex;
+        flex-direction: column;
+        max-height: calc(100vh - 110px);
+        overflow-y: scroll;
+    }
+
+    .crew-bio {
+        align-items: center;
+        margin-left: 0;
+    }
+
+    .crew-bio>h2 {
+        margin-left: 0;
+        margin-top: 50px !important;
+        margin-bottom: 50px !important;
+    }
+
+    .crew-bio .role {
+        font-size: 1.4rem;
+        margin: 10px 10px;
+    }
+
+    .crew-bio .name {
+        font-size: 1.5rem;
+        margin: 20px 10px;
+    }
+
+    .crew-bio .bio {
+        font-size: 1rem;
+        display: flex;
+        height: 150px;
+        margin: 10px 50px;
+    }
+
+    .crew-bio .dot {
+        font-size: 2.2rem;
+    }
+
+    .crew-image {
+        transform: scale(.6);
+        top: 20px;
+    }
+
+
+}
+
+.App-crew {
+    background-image: url('../../assets/images/crew/background-crew-desktop.jpg');
+    background-size: cover;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 481px) {
+    .App-crew {
+        background-image: url('../../assets/images/crew/background-crew-tablet.jpg');
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .App-crew {
+        background-image: url('../../assets/images/crew/background-crew-mobile.jpg');
+        background-size: cover;
+    }
+}
