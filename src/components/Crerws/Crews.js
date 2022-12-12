@@ -23,10 +23,9 @@ function Crews() {
     return (
         <div className='App-crew'>
             <Navbar />
-            
             <div className='crew-container'>
                 <div className='crew-bio'>
-                    <h2>MEET YOUR CREW</h2>
+                    <h2>02 MEET YOUR CREW</h2>
                     <div className='role'>
                         <h4>{crews[index].role}</h4>
                     </div>
@@ -50,7 +49,7 @@ function Crews() {
                     </div>
                 </div>
                 <div className='crew-image'>
-                    <span><img src={require(`../../assets/images/crew/${crews[index].images.png}`)} alt='a' /></span>
+                    <span><img src={require(`../../assets/images/crew/${crews[index].images.png}`)} alt={crews[index].name} /></span>
                 </div>
             </div>
         </div>

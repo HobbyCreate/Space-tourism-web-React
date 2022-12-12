@@ -1,4 +1,5 @@
 import React from 'react'
+import Destination from '../Destination/Destination';
 import Navbar from '../navbar/Navbar';
 import './Home.css';
 
@@ -16,7 +17,7 @@ function Home() {
                 </div>
                 <div className='grid-two'>
                     <div className='circle'>
-                        <h3>Explore</h3>
+                        <a href="destination"><h3 onClick={() => <Destination/>}>Explore</h3></a>
                     </div>
 
                 </div>

@@ -33,6 +33,9 @@
     margin: 20px auto;
     max-width: 45%;
     text-align: left;
+    font-style: italic;
+    letter-spacing: 1px;
+    line-height: 170%;
 }
 
 .grid-two {
@@ -43,14 +46,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ffffff;
+    background-color: rgb(255, 255, 255);
     border-radius: 50%;
     width: 250px;
     height: 250px;
 }
 
+.circle a {
+    text-decoration: none;
+}
+
 .circle h3 {
-    color: #000000;
+    color: #2c2929;
 }
 
 
@@ -86,6 +93,9 @@
     .grid-one p {
         font-size: 1rem;
         text-align: center;
+        font-style: italic;
+        letter-spacing: 1px;
+        line-height: 100%;
     }
 
     .grid-two {
@@ -96,8 +106,8 @@
 
     .circle {
         text-align: center;
-        width: 150px;
-        height: 150px;
+        width: 170px;
+        height: 170px;
     }
 
 }
